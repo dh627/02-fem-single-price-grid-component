@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 56%, 48%);
+  --yellow: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --greyish-blue: hsl(218, 22%, 67%);
+}
+
+/* Tablet & Desktop layout */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grey);
+  }
+
+  /* Why won't this work? */
+  /* main {
+    border-radius: 5px;
+  } */
+
+  .top-section {
+    background-color: white;
+    padding: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .bottom-section {
+    display: flex;
+  }
+
+  .right-section,
+  .left-section {
+    padding: 40px;
+    width: 50%;
+  }
+
+  .left-section {
+    background-color: var(--cyan);
+    border-bottom-left-radius: 5px;
+  }
+
+  .left-section p {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    all: unset;
+    width: 100%;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    color: white;
+  }
+
+  .right-section {
+    background-color: var(--light-cyan);
+    border-bottom-right-radius: 5px;
+  }
+
+  .right-section ul {
+    list-style-type: none;
+  }
+}
